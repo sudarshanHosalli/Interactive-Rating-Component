@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site URL]([https://your-live-site-url.com](https://clever-shortbread-90cad1.netlify.app/))
+- [Live Site URL]: [https://clever-shortbread-90cad1.netlify.app/](https://clever-shortbread-90cad1.netlify.app/)
 
 
 ### Built with
