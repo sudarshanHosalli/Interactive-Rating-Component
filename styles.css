@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  line-height: 1;
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: hsl(213deg 19.05% 15.34%);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.heading {
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+
+.para {
+  font-size: 1.1rem;
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
+}
+
+.btns-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  appearance: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: hsl(213deg 19.05% 15.34%);
+  color: hsl(217, 12%, 63%);
+  font-size: 1rem;
+  font-weight: 700;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+
+.submit-btn {
+  appearance: none;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: hsl(216, 12%, 8%);
+  padding: 0.8rem;
+  border-radius: 30px;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+
+.btn:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(216, 12%, 8%);
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.thank-you-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.thank-you-section > figure {
+  display: flex;
+  justify-content: center;
+}
+
+.tag {
+  padding: 0.6rem;
+  background-color: hsla(216, 6%, 33%, 0.329);
+  width: 50%;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.tag > span {
+  color: hsl(25, 97%, 53%);
+}
+
+.thank-you-text-container {
+  margin-top: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+.hideRatingContainer{
+   display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .main {
+    width: 340px;
+  }
+}
